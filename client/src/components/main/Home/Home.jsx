@@ -7,7 +7,7 @@ export default function Home(){
             <div className="col-1">
 
                 <h1>Welcome to MacroFitHub</h1>
-                <p>This is a place where you can calculate your macronutrient intake so you can know if you are above or under the need.</p>
+                <p>This is the place where you can calculate your macronutrient intake so you can know if you are above or under the need.</p>
 
             </div>
 

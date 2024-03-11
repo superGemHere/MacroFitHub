@@ -28,7 +28,7 @@
         border-left:150px solid transparent;
         border-right:150px solid transparent;
         width: 10em;
-        bottom: -25px;
+        bottom: -30px;
 
     }
 
@@ -45,6 +45,8 @@
         border-right: 2px solid rgba(255, 255, 255, 0.4);
         border-radius: 10em;
         padding-bottom: 2em;
+        position: relative;
+        top: -50px;
 
 
         h1{
@@ -68,34 +70,69 @@
         justify-content: center;
         width: 90%;
         text-align: center;
+        font-family: inherit;
+
+        .left::before{
+            content:"";
+            // border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            width: 15em;
+            border:1px solid #EFD3A5;
+            border-left:150px solid transparent;
+            border-right:150px solid transparent;
+            position: relative;
+            top: -2em;
+        }
+        .left::after{
+            content:"";
+            position: relative;
+            // border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            border:1px solid #EFD3A5;
+            border-left:150px solid transparent;
+            border-right:150px solid transparent;
+            width: 10em;
+            bottom: -30px;
+        }
 
         .left{
             display: flex;
             max-width: 50%;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            border-left: 2px solid #EFD3A5;
+            border-right: 2px solid #EFD3A5;
+            border-radius: 10em;
+            padding: 2em;
+            font-family: inherit;
            
             .macro-info{
                 display: flex;
                 max-width: 90%;
                 align-items: center;
                 justify-content: center;
-                
+                font-family: inherit;
                 article{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     max-width: 80%;
+                    font-family: inherit;
                     h2{
                         font-style: italic;
-                        font-size: 2em;
-                        font-weight: 400;
+                        font-family: inherit;
+                        font-size: 1.6em;
+                        color: #c9cad3;
+                        font-weight: bold;
+                        text-shadow: #030303 1px 0 20px ;
                     }
 
                     p{
+                        font-family: inherit;
+                        color: #c9cad3;
                         font-size: 1.3em;
                         text-align: center;
+                        text-shadow: #030303 1px 0 10px ;
                     }
                 
                 }
