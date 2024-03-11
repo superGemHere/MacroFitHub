@@ -10,6 +10,7 @@ export default function Header(){
             <div className="left">
             <Link className="link" to="/">Home</Link>
             <Link className="link" to="#">Catalog</Link>
+            <Link className="link" to="#">Recipes</Link>
             </div>
             <div className="center">
             <Link className="link logo" to="/">MacroFitHub</Link>
