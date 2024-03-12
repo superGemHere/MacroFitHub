@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 .header{
     display: flex;
@@ -12,9 +13,9 @@
     color: #fff;
 
     .link{
-        font-size: 2em;
+        font-size: 1.3em;
         text-decoration: none;
-        font-family: "Whisper";
+        font-family: "Merriweather", sans-serif;
         color: #fff;
     }
 
@@ -34,7 +35,7 @@
         .logo{
             font-size: 2.8em;
             // font-family: "Whisper", cursive;
-            font-family: "Lugrasimo", cursive;
+            font-family: "Merriweather", sans-serif;
             color: #EFD3A5;
             font-weight: bold;
             text-shadow: #fff 1px 0 10px ;
@@ -47,17 +48,17 @@
         justify-content: center;
         align-items: center;
         gap: 4em;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-family: Merriweather, sans-serif;
 
        .macro-nutrients{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.8em;
+        font-size: 1.3em;
         cursor: pointer;
         gap: .5em;
         // font-family: inherit;
-        font-family: "Whisper";
+        font-family: "Merriweather", sans-serif;
 
         
            .calc-btn{
