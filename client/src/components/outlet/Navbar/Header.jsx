@@ -13,7 +13,7 @@ export default function Header(){
             <Link className="link" to="#">Recipes</Link>
             </div>
             <div className="center">
-            <Link className="link logo" to="/">MacroFitHub</Link>
+            <Link className="link logo" to="/">FitHub</Link>
             </div>
             <div className="right">
                 <p className="macro-nutrients">
