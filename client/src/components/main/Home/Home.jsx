@@ -98,9 +98,7 @@ export default function Home(){
                     </section>
                 </article>
                 <a href="#welcome" className="closeBtn" onClick= {async() =>{
-                     setTimeout( () => makeNotVis(),
-                       550
-                    )
+                    setTimeout( () => makeNotVis(), 550)
                     scrollToTop()
 
                 }}>Close Article</a>
