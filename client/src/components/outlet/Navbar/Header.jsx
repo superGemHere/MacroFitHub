@@ -6,6 +6,7 @@ import {Link} from "react-router-dom"
 export default function Header(){
 
     return(
+        <div className="header-main">
         <header className="header">
             <div className="left">
             <Link className="link" to="/">Home</Link>
@@ -23,5 +24,6 @@ export default function Header(){
             </div>
 
         </header>
+        </div>
     );
 }
