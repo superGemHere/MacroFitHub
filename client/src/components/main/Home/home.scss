@@ -279,7 +279,7 @@
                 font-style: italic;
                 font-family: inherit;
                 font-size: 2em;
-                color: #2D6E5C;
+                color: #fff;
                 font-weight: bold;
                 text-shadow: #225546 1px 0 15px ;
                 position: relative;
@@ -287,11 +287,13 @@
                 transition: all .5s;
                 cursor: pointer;
                 pointer-events: auto;
+                background: none;
+                border: none;
 
                 &:hover{
                     scale: 1.1;
-                    color: orangered;
-                    text-shadow: aqua 1px 0 15px ;
+                    color: #131313;
+                    text-shadow: #fff 1px 0 15px ;
                 }
             }
 
@@ -314,6 +316,8 @@
         align-items: center;
         flex-direction: column;
         transition: all .5s;
+        font-family: inherit;
+        margin-top: 2em;
 
         article{
             display: flex;
@@ -323,6 +327,7 @@
             align-items: start;
             gap: 3em;
             scroll-behavior: smooth;
+            font-family: inherit;
 
             .macro-infoAll{
                 display: flex;
@@ -330,19 +335,23 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                font-family: inherit;
 
                 h2{
                     font-size: 2.8em;
                     font-weight: bold;
+                    font-family: inherit;
                 }
 
                 p{
                     font-size: 1.5em;
+                    font-family: inherit;
 
                     i{
                         font-size: 1em;
                         font-style: italic;
                         font-weight: 550;  
+                        font-family: inherit;
                     }
                 }
             }
@@ -353,14 +362,17 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                font-family: inherit;
 
                 h2{
                     font-size: 2.2em;
-                    font-weight: 550;                }
+                    font-weight: 550;
+                    font-family: inherit;
+                    }
                 
                 p{
                     font-size: 1.5em;
-
+                    font-family: inherit;
                 }
             }
 
@@ -370,14 +382,17 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                font-family: inherit;
 
                 h2{
                     font-size: 2.2em;
-                    font-weight: 550;                }
+                    font-weight: 550;
+                    font-family: inherit;
+                }
                 
                 p{
                     font-size: 1.5em;
-
+                    font-family: inherit;
                 }
             }
             
@@ -387,17 +402,39 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                font-family: inherit;
 
                 h2{
                     font-size: 2.2em;
-                    font-weight: 550;                }
+                    font-weight: 550;
+                    font-family: inherit;
+                }
                 
                 p{
                     font-size: 1.5em;
-
+                    font-family: inherit;
                 }
             }
 
+        }
+    }
+
+    .closeBtn{
+        text-decoration: none;
+        color: #131313;
+        font-size: 2em;
+        margin-top: 1em;
+        transition: .5s;
+        font-family: inherit;
+
+        &:visited{
+            color: #131313;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            color: #fff;
+            text-shadow: #131313 1px 0 15px;
         }
     }
 }
