@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.catalog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient( #2D6E5C, #c9cad3);
+    
+
+    .container{
+        padding:4em 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width:100%;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 2.5em;
+        
+        .card{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 20em;
+            height: 25em;
+            padding: 2em .5em 2em .5em;
+            background-color: #696464;
+            border: 3px solid rgba($color: #555252, $alpha: 0.5);
+            outline: 2px solid rgba($color: #fff, $alpha: 0.5);
+            outline-offset: -1px;
+            background-position: center;
+            object-fit: cover;
+            border-radius: 1em;
+            filter: grayscale(40%);
+            transition: all .5s;
+
+            &:hover{
+                filter: grayscale(0);
+                scale: 1.01;
+
+                h2{
+                    top: 20px;
+                }
+                .buttons{
+                    filter: blur(0);
+                }
+            }
+            
+            h2{
+                color: #fff;
+                text-shadow: #131313 1px 0 10px;
+                font-weight: bold;
+                font-size: 2.5em;
+                font-family: "Oswald", sans-serif;
+                position: relative;
+                top: 40px;
+                transition: all .5s;
+                filter: drop-shadow(3px 0.5px #313135);
+            }
+
+            .buttons{
+                display: flex;
+                width: 90%;
+                align-items: center;
+                justify-content: space-around;
+                position: relative;
+                top: 20px;
+                color: #fff;
+                filter: blur(100px);
+                transition: all .4s;
+                background-color: rgba($color: #000000, $alpha: 0.1);
+
+                .info-btn{
+                    font-size:3.5em;
+                    filter: drop-shadow(4px 0.5px #313135);
+                    transition: all .4s;
+
+                    &:hover{
+                        color: rgba($color: rgb(0, 204, 255), $alpha: 0.9);
+                        filter: drop-shadow(4px 0.5px #747477);
+                        cursor: pointer;
+                    }
+                }
+
+                .add-btn{
+                    font-size:3.5em;
+                    filter: drop-shadow(4px 0.5px #313135);
+                    transition: all .4s;
+
+                    &:hover{
+                        color: rgba(55, 160, 86, 0.9);
+                        filter: drop-shadow(4px 0.5px #747477);
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+
+    
+}
