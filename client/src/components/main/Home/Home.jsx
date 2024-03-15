@@ -25,9 +25,7 @@ export default function Home(){
     }
     const scrollToTop = () => {
 
-            welcomeRef.current?.scrollIntoView({
-                behavior: 'smooth'
-            })
+            window.scrollTo(0, 0)
 
     }
 
