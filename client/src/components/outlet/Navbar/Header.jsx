@@ -9,7 +9,7 @@ export default function Header(){
         <header className="header">
             <div className="left">
             <Link className="link" to="/">Home</Link>
-            <Link className="link" to="#">Catalog</Link>
+            <Link className="link" to="/catalog">Catalog</Link>
             <Link className="link" to="#">Recipes</Link>
             </div>
             <div className="center">
