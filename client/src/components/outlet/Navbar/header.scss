@@ -2,72 +2,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-.header{
+.header-main{
     display: flex;
-    padding: 0.5em;
-    max-width: 100%;
-    height: 5em;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #2D6E5C;
-    color: #fff;
+    flex-direction: column;
+    background: #2D6E5C;
+    max-width: 100vw;
+    height: auto;
 
-    .link{
-        font-size: 1.3em;
-        text-decoration: none;
-        font-family: "Merriweather", sans-serif;
+    // &::after{
+    //     content:"";
+    //     // border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    //     width: 1em;
+    //     border:1px solid rgba(255, 255, 255, 0.4);
+    //     border-left:45px solid transparent;
+    //     border-right:45px solid transparent;
+    // }
+
+    .header{
+        display: flex;
+        padding: 0.5em;
+        width: 99%;
+        height: 5em;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2D6E5C;
         color: #fff;
-    }
+        outline: 1px solid rgba(255, 255, 255, 0.1);
+        outline-offset: -13px;
+        // box-shadow: inset ;
+        
+       
 
-    .left{
-        display: flex;
-        flex: 0 1 20%;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-    }
-
-    .center{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1 0 60%;
-        .logo{
-            font-size: 2.8em;
-            // font-family: "Whisper", cursive;
+        .link{
+            font-size: 1.3em;
+            text-decoration: none;
             font-family: "Merriweather", sans-serif;
-            color: #EFD3A5;
-            font-weight: bold;
-            text-shadow: #fff 1px 0 10px ;
+            color: #fff;
+        }
+
+        .left{
+            display: flex;
+            flex: 0 1 20%;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0 60%;
+            .logo{
+                font-size: 2.8em;
+                // font-family: "Whisper", cursive;
+                font-family: "Merriweather", sans-serif;
+                color: #EFD3A5;
+                font-weight: bold;
+                text-shadow: #fff 1px 0 10px ;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex: 0 1 20%;
+            justify-content: center;
+            align-items: center;
+            gap: 4em;
+            font-family: Merriweather, sans-serif;
+
+        .macro-nutrients{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            cursor: pointer;
+            gap: .5em;
+            // font-family: inherit;
+            font-family: "Merriweather", sans-serif;
+
+            
+            .calc-btn{
+                font-size: 2em;
+                cursor: pointer;
+                margin: 0 0.5em 0 0;
+            }
+
+        }
+
         }
     }
-
-    .right {
-        display: flex;
-        flex: 0 1 20%;
-        justify-content: center;
-        align-items: center;
-        gap: 4em;
-        font-family: Merriweather, sans-serif;
-
-       .macro-nutrients{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.3em;
-        cursor: pointer;
-        gap: .5em;
-        // font-family: inherit;
-        font-family: "Merriweather", sans-serif;
-
-        
-           .calc-btn{
-               font-size: 2em;
-               cursor: pointer;
-               margin: 0 0.5em 0 0;
-           }
-
-       }
-
-    }
 }
+
