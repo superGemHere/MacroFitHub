@@ -325,7 +325,7 @@
             width: 80%;
             justify-content: center;
             align-items: start;
-            gap: 3em;
+            gap: 2em;
             scroll-behavior: smooth;
             font-family: inherit;
 
@@ -426,6 +426,7 @@
         margin-top: 1em;
         transition: .5s;
         font-family: inherit;
+        margin-bottom: 2em;
 
         &:visited{
             color: #131313;
