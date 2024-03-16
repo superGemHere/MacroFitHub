@@ -21,7 +21,7 @@
         scale: 1.01;
 
         h2{
-            top: 20px;
+            top: 15px;
         }
         .buttons{
             filter: blur(0);
@@ -51,7 +51,7 @@
         filter: blur(100px);
         transition: all .4s;
         background-color: rgba($color: #000000, $alpha: 0.1);
-        padding: .2em;
+        padding: .1em;
 
         .info-btn{
             font-size:2.5em;
