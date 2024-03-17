@@ -1,0 +1,67 @@
+
+
+.add-product{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    transition: all .4s;
+    background: linear-gradient(transparent, rgba($color: #000000, $alpha: 0.2));
+    backdrop-filter: blur(3px);
+    outline: 1px solid rgba($color: #000000, $alpha: 0.2);
+    padding: .5em .1em;
+    text-align: center;
+    border-radius:  5px;
+
+    &:hover, :active{
+        filter: grayscale(0);
+        scale: 1.01;
+
+        h2{
+            top: 15px;
+        }
+        
+    }
+
+    form{
+        padding: .5em;
+        display: flex;
+        flex-direction: column;
+        // background: linear-gradient(rgba($color: #000000, $alpha: 0.4), transparent);
+        
+        label{
+            margin-bottom: 5px;
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+
+        input[type="number"]{
+            outline: none;
+            border: none;
+        }
+    }
+
+    // .card:has(form:active){
+    //     filter: grayscale(0);
+    //     scale: 1.01;
+    // }
+    .card:active{
+        filter: grayscale(0);
+        scale: 1.01;
+    }
+
+    .add-close{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        color:red;
+        font-size: 1.8em;
+        // background-color: red;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
