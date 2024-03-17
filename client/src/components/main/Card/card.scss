@@ -13,10 +13,10 @@
     background-position: center;
     object-fit: cover;
     border-radius: 1em;
-    filter: grayscale(40%);
+    filter: grayscale(60%);
     transition: all .5s;
 
-    &:hover{
+    &:hover, :active{
         filter: grayscale(0);
         scale: 1.01;
 
