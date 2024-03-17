@@ -1,8 +1,5 @@
 import "./catalog.scss";
 
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-
 import Card from "../Card/Card";
 
 export default  function Catalog() {
