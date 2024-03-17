@@ -1,6 +1,6 @@
 import "./addProduct.scss";
 
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+// import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import DisabledByDefaultRoundedIcon from '@mui/icons-material/DisabledByDefaultRounded';
 
 export default function AddProduct ({
@@ -19,7 +19,7 @@ export default function AddProduct ({
             
             <div className="add-product">
 
-                {/* <h2>Name</h2> */}
+                <h2>{item.name}</h2>
                 <form action="#" onSubmit={()=>alert("Item added!")}>
                     <label htmlFor="quantity">Quantity</label>
                     <div className="inline">
