@@ -18,15 +18,17 @@ export default function Card ({
     }
                             
     return(
-        <div className="card"  style={{backgroundImage: `url(${item.img})`}}>
-            <h2 style={isVis ? {top: "0px"} : {}}>{item.name}</h2>
+        <div className="card"  style={  isVis ? {backgroundImage: `url(${item.img})`, padding: "0"}: {backgroundImage: `url(${item.img})`, } }>
             {isVis  ? 
                     <AddProduct  setIsVis={setIsVis} item={item}/>
                     :   
+                    <>
+                        <h2 style={isVis ? {top: "0px"} : {}}>{item.name}</h2>
                     <div className="buttons">
                         <InfoOutlinedIcon className="info-btn"/>
                         <AddOutlinedIcon className="add-btn" onClick={() => setIsVis(true)}/>
                     </div>
+                    </>
                     
                     }
         </div>				
