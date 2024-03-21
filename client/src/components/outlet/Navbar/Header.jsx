@@ -6,7 +6,6 @@ import {Link} from "react-router-dom"
 export default function Header(){
 
     //next step add nutrient cart
-    //
 
     return(
         <div className="header-main">
