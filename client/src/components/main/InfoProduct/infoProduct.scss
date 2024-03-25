@@ -1,0 +1,63 @@
+//Make card stay like an active state without any grayscale or downscaling.
+
+.info-product{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    // top: 20px;
+    color: #fff;
+    transition: all .4s;
+    background: linear-gradient(transparent, rgba($color: #000000, $alpha: 0.2));
+    backdrop-filter: blur(3px);
+    outline: 1px solid rgba($color: #000000, $alpha: 0.2);
+    outline-offset: -2px;
+    padding: 1em .3em;
+    text-align: center;
+    border-radius:  1em;
+    scale: 1.02;
+
+    h2{
+        top: 0px;
+    }
+
+    .bold{
+        font-weight: bolder;
+    }
+
+    p{
+        font-size: 1.1em;
+    }
+
+    &:hover, :active{
+        filter: grayscale(0);
+        scale: 1.01;
+        outline-offset: -1px;
+
+        h2{
+            top: -5px;
+        }
+        
+    }
+
+    
+
+    .card:active{
+        filter: grayscale(0);
+        scale: 1.01;
+    }
+
+
+    .info-close{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        color:red;
+        font-size: 1.8em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
