@@ -23,6 +23,7 @@
     &:hover, :active{
         filter: grayscale(0);
         scale: 1.01;
+        outline-offset: -1px;
 
         h2{
             top: 15px;
