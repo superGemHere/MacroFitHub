@@ -5,7 +5,7 @@ import DisabledByDefaultRoundedIcon from '@mui/icons-material/DisabledByDefaultR
 
 export default function AddProduct ({
     item,
-    setIsVis
+    setIsAddVis
 }){
 
 
@@ -27,7 +27,7 @@ export default function AddProduct ({
                         <input type="submit" value="Add" />
                     </div>
                 </form>
-               <DisabledByDefaultRoundedIcon onClick={() => setIsVis(false)} className="add-close"/> 
+               <DisabledByDefaultRoundedIcon onClick={() => setIsAddVis(false)} className="add-close"/> 
             </div>
 
         // </div>
