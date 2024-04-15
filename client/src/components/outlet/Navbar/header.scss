@@ -6,9 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
     flex-direction: column;
     background: #2D6E5C;
-    max-width: 100vw;
+    max-width: 100%;
     height: auto;
 
     // &::after{
@@ -25,6 +26,7 @@
         padding: 0.5em;
         width: 99%;
         height: 5em;
+        font-size: 1.3em;
         justify-content: space-between;
         align-items: center;
         background-color: #2D6E5C;
@@ -36,7 +38,7 @@
        
 
         .link{
-            font-size: 1.3em;
+            font-size: inherit;
             text-decoration: none;
             font-family: "Merriweather", sans-serif;
             color: #fff;
@@ -54,7 +56,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex: 1 0 60%;
+            flex: 1 1 60%;
             .logo{
                 font-size: 2.8em;
                 // font-family: "Whisper", cursive;
@@ -77,13 +79,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.3em;
             cursor: pointer;
             gap: .5em;
             // font-family: inherit;
             font-family: "Merriweather", sans-serif;
 
-            
+            p{
+            font-size: 1.3em;
+            }
             .calc-btn{
                 font-size: 2em;
                 cursor: pointer;
@@ -96,3 +99,143 @@
     }
 }
 
+@media only screen and (max-width: 1065px){
+    .header-main{
+        width: 100%;
+        
+        .header{
+            font-size: 1em;
+            justify-content: space-around;
+            outline-offset: -7px;
+
+            .link{
+                font-size: 1.3em;
+            }
+            .center{
+              
+                .logo{
+                    font-size: 2.5em;
+                }
+            }
+            .right {
+                .macro-nutrients{
+                span{
+                    font-size: 1.3em;
+                }    
+        
+                    .calc-btn{
+                        font-size: 1.5em;
+                    }
+        
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 690px){
+    .header-main{
+        position: fixed;
+        .header{
+            // font-size: 1em;
+            // justify-content: space-around;
+            // outline-offset: -7px;
+
+            .link{
+                // font-size: 1.3em;
+            }
+
+            .left{
+                display: none;
+                
+                
+            }
+            .menuIcon{
+                display: block;
+                font-size: 2em;
+                margin-left: 1em;
+            }
+
+            .center{
+              
+                .logo{
+                    font-size: 2.5em;
+                }
+            }
+            .right {
+                .macro-nutrients{
+                span{
+                    display: none;
+                }    
+        
+                    .calc-btn{
+                        font-size: 2.7em;
+                    }
+        
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 550px){
+    .header-main{
+        width: 100%;
+        .header{
+            width: 100%;
+
+            .link{
+                // font-size: 1.3em;
+            }
+
+            
+            .center{
+              
+                .logo{
+                    font-size: 2.5em;
+                }
+            }
+            .right {
+                .macro-nutrients{
+                p{
+                    display: none;
+                }    
+        
+                    .calc-btn{
+                        font-size: 2em;
+                    }
+        
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 415px){
+    .header-main{
+        width: 100%;
+        .header{
+            width: 100%;
+
+            .link{
+                // font-size: 1.3em;
+            }
+            
+            .center{
+              
+                .logo{
+                    font-size: 2.5em;
+                }
+            }
+            .right {
+                .macro-nutrients{
+                p{
+                    display: none;
+                }    
+        
+                    .calc-btn{
+                        font-size: 2em;
+                    }
+        
+                }
+            }
+        }
+    }
+}
